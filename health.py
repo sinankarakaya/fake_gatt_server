@@ -7,7 +7,7 @@ from service import Application, Service, Characteristic, Descriptor
 import pandas as pd
 
 GATT_CHRC_IFACE = "org.bluez.GattCharacteristic1"
-NOTIFY_TIMEOUT = 100
+NOTIFY_TIMEOUT = 1000
 
 
 class HealthAdvertisement(Advertisement):
@@ -119,3 +119,4 @@ try:
     app.run()
 except KeyboardInterrupt:
     app.quit()
+
